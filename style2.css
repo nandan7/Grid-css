@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+    justify-items: stretch;
+}
+
+.grid-container>div {
+    padding: 10px;
+    background-color: grey;
+}
+
+.grid-container>div:nth-child(even) {
+    background-color: lightgray;
+}
+
+#div1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    justify-items: start;
+}
